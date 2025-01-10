@@ -7,7 +7,7 @@ public class App {
         runArbolBinario();
 
 
-        public void runEjercicio3() {
+        /*public void runEjercicio3() {
             ArbolBinario arbolBinario = new ArbolBinario();
             ListLeves listLeves = new ListLeves();
             int[] valores = {40, 20, 60, 10, 30, 50, 70, 5, 15, 55};
@@ -18,7 +18,7 @@ public class App {
     
             System.out.println("Listas por Nivel:");
             listLeves.imprimirListasPorNivel(listLeves.ListLeves(arbolBinario.getRoot()));
-        }
+        }*/
     
     }
 
