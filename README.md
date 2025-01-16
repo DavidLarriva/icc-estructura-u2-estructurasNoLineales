@@ -73,12 +73,6 @@ Esta clase permite **obtener** las listas de nodos para cada nivel de un árbol 
 
 2. **`imprimirListasPorNivel(List<LinkedList<Node>> listas)`**  
    - Recorre la lista de niveles (cada `LinkedList<Node>`) y muestra sus valores, indicando el número de nivel.  
-   - Ejemplo de salida:
-     ```
-     Nivel 0: 4 -> null
-     Nivel 1: 2 -> 7 -> null
-     ...
-     ```
 
 
 
