@@ -1,4 +1,4 @@
-# Proyecto de Ejercicios con Árboles Binarios
+# Práctica 03 - Ejercicios Logica con Árboles
 
 Este repositorio contiene cuatro ejercicios relacionados con árboles binarios, así como una clase `App` que incluye métodos para correr los diferentes ejercicios ubicados en diferentes paquetes y clases, además la clase App incluye el método PrintTree para imprimir un árbol binario.
 
@@ -7,7 +7,7 @@ Este repositorio contiene cuatro ejercicios relacionados con árboles binarios, 
 ## Ejercicio 01: `InsertBSTTest`
 
 **Clase:** `InsertBSTTest`  
-**Ubicación o Paquete Sug.:** `main.Ejercicio_01_insert`
+**Ubicación:** `main.Ejercicio_01_insert`
 
 ### Descripción General
 
@@ -39,7 +39,7 @@ Esta clase gestiona la inserción de valores en un Árbol Binario de Búsqueda (
 ## Ejercicio 02: `InvertBinaryTree`
 
 **Clase:** `InvertBinaryTree`  
-**Ubicación o Paquete Sug.:** `main.Ejercicio_02_invert`
+**Ubicación:** `main.Ejercicio_02_invert`
 
 ### Descripción General
 
@@ -59,7 +59,7 @@ Esta clase ofrece un método para **invertir** un árbol binario de manera recur
 ## Ejercicio 03: `ListLevels`
 
 **Clase:** `ListLevels`  
-**Ubicación o Paquete Sug.:** `main.Ejercicio_03_listLevels`
+**Ubicación:** `main.Ejercicio_03_listLevels`
 
 ### Descripción General
 
@@ -87,7 +87,7 @@ Esta clase permite **obtener** las listas de nodos para cada nivel de un árbol 
 ## Ejercicio 04: `Depth`
 
 **Clase:** `Depth`  
-**Ubicación o Paquete Sug.:** `main.Ejercicio_04_depth`
+**Ubicación:** `main.Ejercicio_04_depth`
 
 ### Descripción General
 
