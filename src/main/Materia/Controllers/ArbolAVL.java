@@ -9,7 +9,7 @@ public class ArbolAVL {
     public void insert(int value) {
         System.out.println("\n* Nodo a insertar: " + value);
         root = insert(root, value);
-        printTree(); // Mostrar el árbol tras insertar cada nodo.
+        printTree(); 
     }
 
     private Node insert(Node nodo, int value) {
@@ -36,37 +36,37 @@ public class ArbolAVL {
         System.out.println("  Altura del nodo: " + nodo.getHeight());
         System.out.println("  Equilibrio del nodo: " + balance);
 
-        // Caso izquierda - izquierda
+        
         if (balance > 1 && value < nodo.getLeft().getValue()) {
             System.out.println("  Rotación derecha en nodo: " + nodo.getValue() + ", Balance: " + balance);
             Node nuevaRaiz = rightRotate(nodo);
-            printTree(nuevaRaiz); // Imprimir árbol tras la rotación
+            printTree(nuevaRaiz); 
             return nuevaRaiz;
         }
 
-        // Caso derecha - derecha
+        
         if (balance < -1 && value > nodo.getRight().getValue()) {
             System.out.println("  Rotación izquierda en nodo: " + nodo.getValue() + ", Balance: " + balance);
             Node nuevaRaiz = leftRotate(nodo);
-            printTree(nuevaRaiz); // Imprimir árbol tras la rotación
+            printTree(nuevaRaiz);
             return nuevaRaiz;
         }
 
-        // Caso izquierda - derecha
+        
         if (balance > 1 && value > nodo.getLeft().getValue()) {
             System.out.println("  Izquierda-Derecha en nodo " + nodo.getValue());
             nodo.setLeft(leftRotate(nodo.getLeft()));
             Node nuevaRaiz = rightRotate(nodo);
-            printTree(nuevaRaiz); // Imprimir árbol tras la rotación
+            printTree(nuevaRaiz);
             return nuevaRaiz;
         }
 
-        // Caso derecha - izquierda
+        
         if (balance < -1 && value < nodo.getRight().getValue()) {
             System.out.println("  Derecha-Izquierda en nodo " + nodo.getValue());
             nodo.setRight(rightRotate(nodo.getRight()));
             Node nuevaRaiz = leftRotate(nodo);
-            printTree(nuevaRaiz); // Imprimir árbol tras la rotación
+            printTree(nuevaRaiz);
             return nuevaRaiz;
         }
 
