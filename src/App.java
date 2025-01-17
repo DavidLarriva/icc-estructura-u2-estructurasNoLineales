@@ -8,7 +8,9 @@ import main.Ejercicio_04_depth.Depth;
 import main.Materia.Controllers.ArbolAVL;
 import main.Materia.Controllers.ArbolBinario;
 import main.Materia.Controllers.ArbolRecorridos;
+import main.Materia.Controllers.Graph;
 import main.Materia.Models.Node;
+import main.Materia.Models.NodeG;
 
 public class App {
     public static void main(String[] args) throws Exception {
@@ -21,21 +23,43 @@ public class App {
 
        //PRACTICA 15/02/2025
 
-       runEjercicio01();
+       /*runEjercicio01();
        runEjercicio02();
        runEjercicio03();
-       runEjercicio04();
+       runEjercicio04();*/
 
+       runGraph();
+       
+       
+       
+       
+       
+       
+       
+       
+           }
+       
+           private static void runGraph() {
 
+            Graph grafo = new Graph();
+            NodeG cinco = grafo.addNode(5);
+            NodeG siete = grafo.addNode(7);
+            NodeG nueve = grafo.addNode(9);
+            NodeG once = grafo.addNode(11);
+            NodeG tres = grafo.addNode(3);
 
+            grafo.addEdge(cinco, siete);
+            grafo.addEdge(cinco, tres);
+            grafo.addEdge(siete, nueve);
+            grafo.addEdge(nueve, cinco);
+            grafo.addEdge(nueve, tres);
+            grafo.addEdge(tres, once);
 
+            grafo.printGraph();
 
-
-
-
-    }
-
-    private static void runArbolAVL() {
+           }
+       
+           private static void runArbolAVL() {
         ArbolAVL arbolAvl = new ArbolAVL();
         int[] values = {10, 20, 15, 24, 9, 8, 21, 23, 50, 25};
 
